@@ -218,6 +218,8 @@ const app = {
                 _this.nextSong()
             }
             audio.play()
+            player.classList.add('playing')
+            cdThumbAnimate.play()
             _this.render()
             _this.scrollToActiveSong()
         }
@@ -230,6 +232,8 @@ const app = {
                 _this.previousSong()
             }
             audio.play()
+            player.classList.add('playing')
+            cdThumbAnimate.play()
             _this.render()
             _this.scrollToActiveSong()
         }
@@ -265,6 +269,9 @@ const app = {
                     _this.loadCurrentSong()
                     _this.render()
                     audio.play()
+                    audio.play()
+                    player.classList.add('playing')
+                    cdThumbAnimate.play()
                     _this.scrollToActiveSong()
                 }
             }

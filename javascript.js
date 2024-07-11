@@ -76,6 +76,66 @@ const app = {
             singer: 'Obito , Hnhngan',
             path: './assets/music/song (10).mp3',
             image: './assets/img/song 10.jpg'
+        },
+        {
+            name: 'As If its Your Love',
+            singer: 'BLACKPINK',
+            path: './assets/music/song (11).mp3',
+            image: './assets/img/song 11.jpg'
+        },
+        {
+            name: 'Kill This Love',
+            singer: 'BLACKPINK',
+            path: './assets/music/song (13).mp3',
+            image: './assets/img/song 13.jpg'
+        },
+        {
+            name: 'Liều Giờ',
+            singer: '2T , Văn',
+            path: './assets/music/song (14).mp3',
+            image: './assets/img/song 14.jpg'
+        },
+        {
+            name: 'Mãi Mãi Không Phải Anh',
+            singer: 'Thanh Bình',
+            path: './assets/music/song (15).mp3',
+            image: './assets/img/song 15.jpg'
+        },
+        {
+            name: 'Nước Mắt Em Lau Bằng Tình Yêu Mới',
+            singer: 'Da LAT , Tóc Tiên',
+            path: './assets/music/song (16).mp3',
+            image: './assets/img/song 16.jpg'
+        },
+        {
+            name: 'Tình Đắng Như Ly Cà Phê',
+            singer: 'nân , ngơ',
+            path: './assets/music/song (17).mp3',
+            image: './assets/img/song 17.jpg'
+        },
+        {
+            name: 'Vết Mưa',
+            singer: 'Vũ Cát Tường',
+            path: './assets/music/song (18).mp3',
+            image: './assets/img/song 18.jpg'
+        },
+        {
+            name: '3107',
+            singer: 'W; n,Duongg,Nâu',
+            path: './assets/music/song (19).mp3',
+            image: './assets/img/song 19.jpg'
+        },
+        {
+            name: '3107 2',
+            singer: 'W; n,Duongg,Nâu',
+            path: './assets/music/song (20).mp3',
+            image: './assets/img/song 20.jpg'
+        },
+        {
+            name: '3107 3',
+            singer: 'W; n,Duongg,Nâu',
+            path: './assets/music/song (21).mp3',
+            image: './assets/img/song 21.jpg'
         }
     ],
 

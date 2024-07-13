@@ -84,6 +84,12 @@ const app = {
             image: './assets/img/song 11.jpg'
         },
         {
+            name: 'Em Ngon Như Matcha',
+            singer: 'híu x bâu',
+            path: './assets/music/song (12).mp3',
+            image: './assets/img/song 12.jpg'
+        },
+        {
             name: 'Kill This Love',
             singer: 'BLACKPINK',
             path: './assets/music/song (13).mp3',
@@ -136,6 +142,90 @@ const app = {
             singer: 'W; n,Duongg,Nâu',
             path: './assets/music/song (21).mp3',
             image: './assets/img/song 21.jpg'
+        },
+        {
+            name: 'Nasty',
+            singer: 'W; n,Duongg,Nâu',
+            path: './assets/music/song (22).mp3',
+            image: './assets/img/song 22.jpg'
+        },
+        {
+            name: 'what it is',
+            singer: 'Doechii',
+            path: './assets/music/song (23).mp3',
+            image: './assets/img/song 23.jpg'
+        },
+        {
+            name: 'Justine Skyy',
+            singer: 'Collide , Tyga',
+            path: './assets/music/song (24).mp3',
+            image: './assets/img/song 24.jpg'
+        },
+        {
+            name: 'Call Me Maybe',
+            singer: 'Carly Rae Jepsen',
+            path: './assets/music/song (25).mp3',
+            image: './assets/img/song 25.jpg'
+        },
+        {
+            name: 'I.F.L.I',
+            singer: 'Bazzzi',
+            path: './assets/music/song (26).mp3',
+            image: './assets/img/song 26.jpg'
+        },
+        {
+            name: 'Khi Mà',
+            singer: 'Ronboogz',
+            path: './assets/music/song (27).mp3',
+            image: './assets/img/song 27.jpg'
+        },
+        {
+            name: 'Like I Do',
+            singer: 'JTajon',
+            path: './assets/music/song (28).mp3',
+            image: './assets/img/song 28.jpg'
+        },
+        {
+            name: 'Love storty',
+            singer: 'Taylor Sweet',
+            path: './assets/music/song (29).mp3',
+            image: './assets/img/song 29.jpg'
+        },
+        {
+            name: 'Em thích',
+            singer: 'Sean , lua',
+            path: './assets/music/song (30).mp3',
+            image: './assets/img/song 30.jpg'
+        },
+        {
+            name: 'Thêm Bao Nhiêu Lâu',
+            singer: 'Đạt G',
+            path: './assets/music/song (31).mp3',
+            image: './assets/img/song 31.jpg'
+        },
+        {
+            name: 'Vì Anh Đâu Có Biết',
+            singer: 'Madihu',
+            path: './assets/music/song (32).mp3',
+            image: './assets/img/song 32.jpg'
+        },
+        {
+            name: 'Why not me',
+            singer: '18 FRV',
+            path: './assets/music/song (33).mp3',
+            image: './assets/img/song 33.jpg'
+        },
+        {
+            name: 'Yên Một Người Có Lẽ',
+            singer: 'Miu Lê , Lou Hoàng',
+            path: './assets/music/song (34).mp3',
+            image: './assets/img/song 34.jpg'
+        },
+        {
+            name: 'Stay with me',
+            singer: 'Goblin',
+            path: './assets/music/song (35).mp3',
+            image: './assets/img/song 35.jpg'
         }
     ],
 
@@ -290,6 +380,29 @@ const app = {
                     player.classList.remove('playing')
                     cdThumbAnimate.pause()
                 }
+            }
+        })
+
+        // bắt sự kiện nút sang trái
+        document.addEventListener('keydown', function (event) {
+            if (event.key == 'ArrowRight') {
+                _this.nextSong()
+                audio.play()
+                player.classList.add('playing')
+                cdThumbAnimate.play()
+                _this.render()
+                _this.scrollToActiveSong()
+            }
+        })
+
+        document.addEventListener('keydown', function (event) {
+            if (event.key == 'ArrowLeft') {
+                _this.previousSong()
+                audio.play()
+                player.classList.add('playing')
+                cdThumbAnimate.play()
+                _this.render()
+                _this.scrollToActiveSong()
             }
         })
     },

@@ -226,6 +226,42 @@ const app = {
             singer: 'Goblin',
             path: './assets/music/song (35).mp3',
             image: './assets/img/song 35.jpg'
+        },
+        {
+            name: 'Keep me baby',
+            singer: 'Goblin',
+            path: './assets/music/song (36).mp3',
+            image: './assets/img/song 36.jpg'
+        },
+        {
+            name: 'tied me ...',
+            singer: 'Goblin',
+            path: './assets/music/song (37).mp3',
+            image: './assets/img/song 37.jpg'
+        },
+        {
+            name: 'all for you',
+            singer: 'Goblin',
+            path: './assets/music/song (38).mp3',
+            image: './assets/img/song 38.jpg'
+        },
+        {
+            name: 'I want fire',
+            singer: 'Goblin',
+            path: './assets/music/song (39).mp3',
+            image: './assets/img/song 39.jpg'
+        },
+        {
+            name: 'come make me',
+            singer: 'Goblin',
+            path: './assets/music/song (40).mp3',
+            image: './assets/img/song 40.jpg'
+        },
+        {
+            name: 'masup',
+            singer: 'Goblin',
+            path: './assets/music/song (41).mp3',
+            image: './assets/img/song 41.jpg'
         }
     ],
 
@@ -311,7 +347,7 @@ const app = {
             player.classList.add('playing')
             cdThumbAnimate.play()
             _this.render()
-            _this.scrollToActiveSong()
+            //_this.scrollToActiveSong()
         }
 
         // Xử lý nút prev
@@ -325,7 +361,7 @@ const app = {
             player.classList.add('playing')
             cdThumbAnimate.play()
             _this.render()
-            _this.scrollToActiveSong()
+            //_this.scrollToActiveSong()
         }
 
         // Khi bài hát kết thúc
@@ -362,7 +398,7 @@ const app = {
                     audio.play()
                     player.classList.add('playing')
                     cdThumbAnimate.play()
-                    _this.scrollToActiveSong()
+                    //_this.scrollToActiveSong()
                 }
             }
         }
@@ -391,7 +427,7 @@ const app = {
                 player.classList.add('playing')
                 cdThumbAnimate.play()
                 _this.render()
-                _this.scrollToActiveSong()
+                //_this.scrollToActiveSong()
             }
         })
 
@@ -402,7 +438,7 @@ const app = {
                 player.classList.add('playing')
                 cdThumbAnimate.play()
                 _this.render()
-                _this.scrollToActiveSong()
+                //_this.scrollToActiveSong()
             }
         })
     },
@@ -428,7 +464,7 @@ const app = {
         }
         this.loadCurrentSong()
         this.render()
-        this.scrollToActiveSong()
+        // this.scrollToActiveSong()
     },
 
     previousSong: function () {
@@ -438,7 +474,7 @@ const app = {
         }
         this.loadCurrentSong()
         this.render()
-        this.scrollToActiveSong()
+        // this.scrollToActiveSong()
     },
 
     randomSong: function () {
@@ -449,7 +485,7 @@ const app = {
         this.currentIndex = newIndex
         this.loadCurrentSong()
         this.render()
-        this.scrollToActiveSong()
+        //this.scrollToActiveSong()
     },
 
     scrollToActiveSong: function () {
